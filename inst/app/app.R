@@ -11,11 +11,12 @@ library(maps)
 library(plotly)
 library(viridis)
 library(DT)
+library(here)
 theme_set(theme_minimal())
 
 # covid data --------------------------------------------------------------
 
-covid <- load(file = here::here("data/covid.rda"))
+load(file = here::here("data/covid.rda"))
 
 
 # map data --------------------------------------------------------------
@@ -130,7 +131,7 @@ server <- function(input, output, session) {
     
      observeEvent(event_data("plotly_click"), {
          click_df <- event_data("plotly_click")
-         chosen_state <- filter(state_list, X == round(click_df$x,0), Y == round(click_df$y,0)) %>%
+         chosen_state <- dplyr::filter(state_list, X == round(click_df$x,0), Y == round(click_df$y,0)) %>%
              pull(abb)
          updateSelectInput(session, "state", selected = chosen_state)
      })
@@ -138,7 +139,7 @@ server <- function(input, output, session) {
     output$map <- renderPlotly({
         
         #join filtered covid dataset to the usa map dataset
-        usa_map <- usa_map %>% left_join(filter(covid, 
+        usa_map <- usa_map %>% left_join(dplyr::filter(covid, 
                                                 date == input$date[2],
                                                 variable == str_c("daily_", input$variable)), 
                                          by = c("abb" = "key_alpha_2"))
@@ -174,7 +175,7 @@ server <- function(input, output, session) {
     #Plotting covid daily cases
     output$daily <- renderPlotly({
         daily_cases <- covid %>%
-            filter(key_alpha_2 == input$state,
+            dplyr::filter(key_alpha_2 == input$state,
                    date >= input$date[1] & date <= input$date[2],
                    variable == str_c("daily_", input$variable)) %>% 
             ggplot(aes(x = date,
@@ -193,7 +194,7 @@ server <- function(input, output, session) {
     #plotting cumulative covid cases
     output$cumulative <- renderPlotly({
         cumulative_cases <- covid %>%
-            filter(key_alpha_2 == input$state,
+            dplyr::filter(key_alpha_2 == input$state,
                    date >= input$date[1] & date <= input$date[2],
                    variable == input$variable) %>% 
             ggplot(aes(x = date,
@@ -211,7 +212,7 @@ server <- function(input, output, session) {
     })
     
     output$table = renderDataTable(
-        covid %>% filter(date == input$date.t[2],
+        covid %>% dplyr::filter(date == input$date.t[2],
                          variable == str_c(str_replace(input$stats, "cumulative", ""), 
                                            input$variable.t)) %>%
         ungroup() %>% 

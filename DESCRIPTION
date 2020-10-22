@@ -19,6 +19,16 @@ Imports:
     shiny,
     COVID19,
     dplyr,
-    lubridate
+    lubridate,
+    shinythemes,
+    tidyr,
+    stringr,
+    sf,
+    ggplot2,
+    maps,
+    plotly,
+    viridis,
+    DT,
+    here
 Depends: 
     R (>= 2.10)
