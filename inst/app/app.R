@@ -28,7 +28,7 @@ ui <- navbarPage("USA COVID-19 Explorer", theme = shinytheme("flatly"), collapsi
                           fluidRow(column(4,
                                           wellPanel(
                                               h4("User Control"),
-                                              daterange("date"),
+                                              daterange(id = "date"),
                                               selectInput("state", 
                                                           "Select a state",
                                                           choices = state_list$abb,
@@ -51,13 +51,7 @@ ui <- navbarPage("USA COVID-19 Explorer", theme = shinytheme("flatly"), collapsi
                  tabPanel("Table",
                           fluidRow(
                               column(4,
-                                     daterange("date.t")),
-                                     # dateRangeInput("date.t", 
-                                     #                "Select date range",
-                                     #                start = "2020-03-01",
-                                     #                end = "2020-04-30",
-                                     #                min = "2020-03-01",
-                                     #                max = "2020-10-07")),
+                                     daterange(id = "date.t")),
                               column(4,
                                      selectInput("stats", 
                                                  "Select statistics", 
