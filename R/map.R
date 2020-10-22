@@ -12,13 +12,15 @@
 #'- **order**: Index
 #'- **region**: USA States
 #'- **subregion**: NA
-#'- **X**: The value of the x axis for a state's centroid
-#'- **Y**:The value of the y axis for a state's centroid
+#'- **X**: The value of the x coordinate for a state's centroid
+#'- **Y**:The value of the y coordinate for a state's centroid
 #'- **geom**: Simple feature geometry list-column (sfc)
 #'- **abb**: State abbreviation
 #'
 #'@references 
 #'H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
+#'Pebesma, E., 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal 10 (1), 439-446, 
+#'https://doi.org/10.32614/RJ-2018-009
 #'
 #'@docType data
 #'
@@ -43,3 +45,28 @@
 #'  theme(legend.position = "none")
 #'
 "usa_map"
+
+#' @title
+#'USA State List.
+#'
+#'@description 
+#'This dataset contains a list of the centroids coordinates of each states in the US.
+#'
+#'@format
+#'A dataframe with 49 rows and 3 variables:
+#'- **X**: The value of the x axis for a state's centroid
+#'- **Y**:The value of the y axis for a state's centroid
+#'- **abb**: State abbreviation
+#'
+#'@references 
+#'Pebesma, E., 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal 10 (1), 439-446,
+#'https://doi.org/10.32614/RJ-2018-009
+#'
+#'@docType data
+#'
+#'@name state_list
+#'
+#'@usage state_list
+#'
+#'
+"state_list"

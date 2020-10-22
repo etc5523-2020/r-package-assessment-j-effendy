@@ -13,8 +13,8 @@ A dataframe with 15,537 rows and 10 variables:
 \item \strong{order}: Index
 \item \strong{region}: USA States
 \item \strong{subregion}: NA
-\item \strong{X}: The value of the x axis for a state's centroid
-\item \strong{Y}:The value of the y axis for a state's centroid
+\item \strong{X}: The value of the x coordinate for a state's centroid
+\item \strong{Y}:The value of the y coordinate for a state's centroid
 \item \strong{geom}: Simple feature geometry list-column (sfc)
 \item \strong{abb}: State abbreviation
 }
@@ -44,5 +44,7 @@ geom_polygon(color = "light grey",
 }
 \references{
 H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
+Pebesma, E., 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal 10 (1), 439-446,
+https://doi.org/10.32614/RJ-2018-009
 }
 \keyword{datasets}
