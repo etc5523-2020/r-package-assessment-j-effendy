@@ -20,3 +20,4 @@ state_list <- data.frame("X" = round(states$X,0), "Y" = round(states$Y,0), "abb"
 usa_map <- left_join(usa, states, by = c("region" = "ID"))
 
 usethis::use_data(usa_map, overwrite = TRUE)
+usethis::use_data(state_list, overwrite = TRUE)

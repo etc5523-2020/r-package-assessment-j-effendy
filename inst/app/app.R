@@ -18,6 +18,7 @@ load(file = here::here("data/covid.rda"))
 # map data --------------------------------------------------------------
 
 load(file = here::here("data/usa_map.rda"))
+load(file = here::here("data/state_list.rda"))
 
 # ui --------------------------------------------------------------
 

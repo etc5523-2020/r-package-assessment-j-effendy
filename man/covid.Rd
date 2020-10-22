@@ -23,7 +23,7 @@ covid
 This dataset contains USA COVID-19 data at State level from 2020-01-12 to 2020-10-21.
 }
 \examples{
-library(tidyverse)
+library(dplyr)
 library(ggplot2)
 data(covid)
 
