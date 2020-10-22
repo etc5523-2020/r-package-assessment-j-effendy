@@ -1,13 +1,9 @@
 library(shiny)
 library(shinythemes)
-library(COVID19)
 library(dplyr)
 library(tidyr)
 library(stringr)
-library(lubridate)
-library(sf)
 library(ggplot2)
-library(maps)
 library(plotly)
 library(viridis)
 library(DT)
@@ -21,21 +17,7 @@ load(file = here::here("data/covid.rda"))
 
 # map data --------------------------------------------------------------
 
-usa <- map_data("state")
-
-states <- st_as_sf(map("state", 
-                       plot = FALSE, 
-                       fill = TRUE))
-
-states <- cbind(states, 
-                st_coordinates(st_centroid(states)))
-
-states$abb <- state.abb[match(states$ID,tolower(state.name))]
-
-state_list <- data.frame("X" = round(states$X,0), "Y" = round(states$Y,0), "abb" = states$abb)
-
-usa_map <- left_join(usa, states, by = c("region" = "ID"))
-
+load(file = here::here("data/usa_map.rda"))
 
 # ui --------------------------------------------------------------
 

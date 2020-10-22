@@ -24,7 +24,7 @@
 #'@usage covid
 #'
 #'@examples 
-#'library(tidyverse)
+#'library(dplyr)
 #'library(ggplot2)
 #'data(covid)
 #'
