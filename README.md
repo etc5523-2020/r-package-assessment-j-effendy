@@ -28,4 +28,4 @@ library(covidexplorer)
 launch_app()
 ```
 
-![USA COVID-19 Explorer app](man/figures/map.png)
+![](man/figures/map.PNG)
