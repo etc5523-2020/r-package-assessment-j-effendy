@@ -13,7 +13,7 @@ filter_input <- function(data, input){
 #' Use 'cumulative' to return cumulative COVID-19 stats, and 'daily' to return daily COVID-19 stats.
 #'
 #' @param input Variable of interest chosen by users through Shiny app interactivity.
-#' @return `covid_filter` reruns the same type of the input, i.e. a data frame.
+#' @return `covid_filter` returns the same type of the input, i.e. a data frame.
 #' @export
 #' @name covid_filter
 

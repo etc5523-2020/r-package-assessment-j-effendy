@@ -15,7 +15,7 @@ Use 'cumulative' to return cumulative COVID-19 stats, and 'daily' to return dail
 \item{input}{Variable of interest chosen by users through Shiny app interactivity.}
 }
 \value{
-\code{covid_filter} reruns the same type of the input, i.e. a data frame.
+\code{covid_filter} returns the same type of the input, i.e. a data frame.
 }
 \description{
 Filtering the \code{covid} data frame based on user input.

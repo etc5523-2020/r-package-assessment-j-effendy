@@ -2,6 +2,6 @@
 
 export("%>%")
 export(covid_filter)
+export(daterange)
 export(launch_app)
-import(shiny)
 importFrom(magrittr,"%>%")

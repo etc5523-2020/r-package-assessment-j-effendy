@@ -17,20 +17,18 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
     shiny,
-    COVID19,
     dplyr,
-    lubridate,
     shinythemes,
     tidyr,
     stringr,
-    sf,
     ggplot2,
-    maps,
     plotly,
     viridis,
     DT,
     here,
-    magrittr
+    magrittr,
+    sf,
+    maps
 Depends: 
     R (>= 2.10)
 Suggests: 
