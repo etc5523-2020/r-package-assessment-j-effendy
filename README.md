@@ -12,7 +12,7 @@ The goal of `covidexplorer` package is to provide users with insights of the spr
 
 ## Installation
 
-You can install the  `covidexplorer` package with:
+You can install the `covidexplorer` package with:
 
 ``` r
 devtools::install_github("etc5523-2020/r-package-assessment-j-effendy")
