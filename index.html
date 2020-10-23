@@ -64,26 +64,34 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="your-package-name" class="section level1">
+<div id="covidexplorer" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#your-package-name" class="anchor"></a>Your Package Name</h1></div>
+<a href="#covidexplorer" class="anchor"></a>covidexplorer</h1></div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p>The goal of <em>your package name</em> is to …</p>
+<p>The goal of <code>covidexplorer</code> package is to provide users with insights of the spread of COVID-19 in the US through interactive plots and table. The package allows users to launch a Shiny app called USA COVID-19 Explorer. Through this app, users will be able to see the trend of COVID-19 infections across states in the US over time. In addition to selecting preferred stats in a specific date range, the app also allows users to choose daily or cumulative numbers of a number of variable of interests to be shown in the plots and table:</p>
+<ul>
+<li>Confirmed cases</li>
+<li>Deaths</li>
+<li>Test</li>
+<li>Recovered</li>
+</ul>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the <em>your package name</em> with:</p>
+<p>You can install the <code>covidexplorer</code> package with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit">
-</pre></div>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"etc5523-2020/r-package-assessment-j-effendy"</span><span class="op">)</span></pre></div>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example" class="anchor"></a>Example</h2>
 <p>This is a basic example which shows you how to solve a common problem:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">yourpkg</span><span class="op">)</span>
-<span class="co">## basic example code</span></pre></div>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">covidexplorer</span><span class="op">)</span>
+<span class="co"># Launching the USA COVID-19 Explorer app</span>
+<span class="fu"><a href="reference/launch_app.html">launch_app</a></span><span class="op">(</span><span class="op">)</span></pre></div>
+<p><img src="reference/figures/map.png" alt="USA COVID-19 Explorer app"></p>
 </div>
 </div>
   </div>
