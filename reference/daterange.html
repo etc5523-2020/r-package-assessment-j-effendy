@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • covidexplorer</title>
+<title>Function to create date range input for Shiny UI with specified parameters — daterange • covidexplorer</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,8 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Function to create date range input for Shiny UI with specified parameters — daterange" />
+<meta property="og:description" content="Function to create date range input for Shiny UI with specified parameters" />
 
 
 
@@ -58,7 +59,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -103,72 +104,64 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Function to create date range input for Shiny UI with specified parameters</h1>
+    
+    <div class="hidden name"><code>daterange.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Function to create date range input for Shiny UI with specified parameters</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>daterange</span><span class='op'>(</span>
+  <span class='va'>id</span>,
+  label <span class='op'>=</span> <span class='st'>"Select date range"</span>,
+  start <span class='op'>=</span> <span class='st'>"2020-03-01"</span>,
+  end <span class='op'>=</span> <span class='st'>"2020-04-30"</span>,
+  min <span class='op'>=</span> <span class='st'>"2020-03-01"</span>,
+  max <span class='op'>=</span> <span class='st'>"2020-10-07"</span>
+<span class='op'>)</span></pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="covid.html">covid</a></code> </p>
-        </td>
-        <td><p>USA COVID-19 Data.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="covid_filter.html">covid_filter()</a></code> </p>
-        </td>
-        <td><p>Filtering the <code>covid</code> data frame based on user input.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="daterange.html">daterange()</a></code> </p>
-        </td>
-        <td><p>Function to create date range input for Shiny UI with specified parameters</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="launch_app.html">launch_app()</a></code> </p>
-        </td>
-        <td><p>USA COVID-19 Explorer Launcher</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="state_list.html">state_list</a></code> </p>
-        </td>
-        <td><p>USA State List.</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="usa_map.html">usa_map</a></code> </p>
-        </td>
-        <td><p>USA Map Data.</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>id</th>
+      <td><p>Input ID that will be used to access the value chosen by users.</p></td>
+    </tr>
+    <tr>
+      <th>label</th>
+      <td><p>The label for the date range input control.</p></td>
+    </tr>
+    <tr>
+      <th>start</th>
+      <td><p>The initial start date. Either a Date object, or a string in yyyy-mm-dd format.</p></td>
+    </tr>
+    <tr>
+      <th>end</th>
+      <td><p>The initial end date. Either a Date object, or a string in yyyy-mm-dd format.</p></td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td><p>The minimum allowed date. Either a Date object, or a string in yyyy-mm-dd format.</p></td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td><p>The maximum allowed date. Either a Date object, or a string in yyyy-mm-dd format.</p></td>
+    </tr>
     </table>
-  </div>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p><code>daterange</code> returns A Date vector of length 2.</p>
+    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
+
+    <p>Winston Chang, Joe Cheng, JJ Allaire, Yihui Xie and Jonathan McPherson (2020). shiny: Web Application Framework for R. R
+package version 1.5.0. https://CRAN.R-project.org/package=shiny</p>
+
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
