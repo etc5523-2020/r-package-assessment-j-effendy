@@ -23,6 +23,7 @@
 #'
 #'@usage covid
 #'
+#'
 #'@examples 
 #'library(dplyr)
 #'library(ggplot2)

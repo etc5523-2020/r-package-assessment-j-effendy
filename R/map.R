@@ -28,6 +28,7 @@
 #'
 #'@usage usa_map
 #'
+#'
 #'@examples 
 #'library(ggplot2)
 #'data(usa_map)

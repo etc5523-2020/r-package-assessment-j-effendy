@@ -1,0 +1,30 @@
+---
+title: "Introduction to USA COVID-19 Explorer"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to USA COVID-19 Explorer}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(covidexplorer)
+library(knitr)
+```
+
+## About the Package 
+
+## How to Launch USA COVID-19 Explorer
+
+## What is USA COVID-19 Explorer app?
+
+```{r image}
+knitr::include_graphics(here::here("man/figures/map.PNG"))
+```

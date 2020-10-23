@@ -147,10 +147,11 @@ server <- function(input, output, session) {
     
     #Plotting covid daily cases
     output$daily <- renderPlotly({
-        daily_cases <- covid %>%
-            dplyr::filter(key_alpha_2 == input$state,
-                   date >= input$date[1] & date <= input$date[2],
-                   variable == str_c("daily_", input$variable)) %>% 
+        daily_cases <- covid_filter(covid, stats = 'daily', input) %>% 
+             # covid %>%
+             # dplyr::filter(key_alpha_2 == input$state,
+             #        date >= input$date[1] & date <= input$date[2],
+             #        variable == str_c("daily_", input$variable)) %>% 
             ggplot(aes(x = date,
                        y = value)) +
             geom_col(fill = "darkcyan",
@@ -166,10 +167,11 @@ server <- function(input, output, session) {
     
     #plotting cumulative covid cases
     output$cumulative <- renderPlotly({
-        cumulative_cases <- covid %>%
-            dplyr::filter(key_alpha_2 == input$state,
-                   date >= input$date[1] & date <= input$date[2],
-                   variable == input$variable) %>% 
+        cumulative_cases <- covid_filter(covid, stats = 'cumulative', input) %>% 
+             # covid %>%
+             # dplyr::filter(key_alpha_2 == input$state,
+             #        date >= input$date[1] & date <= input$date[2],
+             #        variable == input$variable) %>% 
             ggplot(aes(x = date,
                        y = value)) +
             geom_line(size = 1.5,
@@ -191,7 +193,7 @@ server <- function(input, output, session) {
         ungroup() %>% 
         select(administrative_area_level_2, value),
                option = list(pageLength = 15),
-               colnames = c("State", "Number of Cases")
+               #colnames = c("State", "Number of Cases")
     )
 }
 

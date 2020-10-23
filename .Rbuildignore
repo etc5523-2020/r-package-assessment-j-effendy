@@ -3,3 +3,8 @@
 ^.*\.Rproj$
 ^LICENSE\.md$
 ^data-raw$
+^doc$
+^Meta$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

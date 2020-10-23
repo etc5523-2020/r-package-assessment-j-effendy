@@ -29,8 +29,12 @@ Imports:
     plotly,
     viridis,
     DT,
-    here
+    here,
+    magrittr
 Depends: 
     R (>= 2.10)
 Suggests: 
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
