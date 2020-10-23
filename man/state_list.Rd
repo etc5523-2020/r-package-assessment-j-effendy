@@ -14,12 +14,12 @@ A dataframe with 49 rows and 3 variables:
 }
 \usage{
 state_list
+
+#'@references 
+Pebesma, E., 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal 10 (1), 439-446,
+https://doi.org/10.32614/RJ-2018-009
 }
 \description{
 This dataset contains a list of the centroids coordinates of each states in the US.
-}
-\references{
-Pebesma, E., 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal 10 (1), 439-446,
-https://doi.org/10.32614/RJ-2018-009
 }
 \keyword{datasets}

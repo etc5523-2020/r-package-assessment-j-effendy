@@ -7,12 +7,12 @@
 covid_filter(data, stats, input)
 }
 \arguments{
-\item{data}{\code{covid} data frame.}
+\item{data}{a data frame, in this instance the \code{covid} data frame.}
 
 \item{stats}{Preferred statistics to calculate the variable of interest in the COVID-19 data frame.
-Use 'cumulative' to return cumulative COVID-19 stats, and 'daily'to return daily COVID-19 stats.}
+Use 'cumulative' to return cumulative COVID-19 stats, and 'daily' to return daily COVID-19 stats.}
 
-\item{input}{Variable of interest chosen by users.}
+\item{input}{Variable of interest chosen by users through Shiny app interactivity.}
 }
 \value{
 \code{covid_filter} reruns the same type of the input, i.e. a data frame.

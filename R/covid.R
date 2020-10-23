@@ -14,8 +14,6 @@
 #'- **variables**: Variable of interests (number of tests, confirmed cases, deaths, and recovered)
 #'- **value**: The counts of the variable of interests.
 #'
-#'@references 
-#'Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, doi: 10.21105/joss.02376.
 #'
 #'@docType data
 #'
@@ -34,4 +32,6 @@
 #'   ggplot(aes(x = date, y = value)) + 
 #'   geom_line()
 #'
+#'@references 
+#'Guidotti, E., Ardia, D., (2020), "COVID-19 Data Hub", Journal of Open Source Software 5(51):2376, doi: 10.21105/joss.02376.
 "covid"

@@ -7,12 +7,12 @@ filter_input <- function(data, input){
 
 #' Filtering the `covid` data frame based on user input.
 #'
-#' @param data `covid` data frame.
+#' @param data a data frame, in this instance the `covid` data frame.
 #'
 #' @param stats Preferred statistics to calculate the variable of interest in the COVID-19 data frame.
-#' Use 'cumulative' to return cumulative COVID-19 stats, and 'daily'to return daily COVID-19 stats.
+#' Use 'cumulative' to return cumulative COVID-19 stats, and 'daily' to return daily COVID-19 stats.
 #'
-#' @param input Variable of interest chosen by users.
+#' @param input Variable of interest chosen by users through Shiny app interactivity.
 #' @return `covid_filter` reruns the same type of the input, i.e. a data frame.
 #' @export
 #' @name covid_filter

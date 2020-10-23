@@ -12,7 +12,6 @@ A dataframe with 15,537 rows and 10 variables:
 \item \strong{group}: Grouping geographical data to states
 \item \strong{order}: Index
 \item \strong{region}: USA States
-\item \strong{subregion}: NA
 \item \strong{X}: The value of the x coordinate for a state's centroid
 \item \strong{Y}:The value of the y coordinate for a state's centroid
 \item \strong{geom}: Simple feature geometry list-column (sfc)

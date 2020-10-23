@@ -20,7 +20,7 @@ devtools::install_github("etc5523-2020/r-package-assessment-j-effendy")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is how you can use the `covidexplorer` package to launch USA COVID-19 Explorer app:
 
 ``` r
 library(covidexplorer)

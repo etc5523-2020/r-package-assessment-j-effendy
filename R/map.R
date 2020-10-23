@@ -11,16 +11,11 @@
 #'- **group**: Grouping geographical data to states
 #'- **order**: Index
 #'- **region**: USA States
-#'- **subregion**: NA
 #'- **X**: The value of the x coordinate for a state's centroid
 #'- **Y**:The value of the y coordinate for a state's centroid
 #'- **geom**: Simple feature geometry list-column (sfc)
 #'- **abb**: State abbreviation
 #'
-#'@references 
-#'H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
-#'Pebesma, E., 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal 10 (1), 439-446, 
-#'https://doi.org/10.32614/RJ-2018-009
 #'
 #'@docType data
 #'
@@ -45,6 +40,10 @@
 #'  theme_void()+
 #'  theme(legend.position = "none")
 #'
+#'@references 
+#'H. Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
+#'Pebesma, E., 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal 10 (1), 439-446, 
+#'https://doi.org/10.32614/RJ-2018-009
 "usa_map"
 
 #' @title
@@ -59,9 +58,6 @@
 #'- **Y**:The value of the y axis for a state's centroid
 #'- **abb**: State abbreviation
 #'
-#'@references 
-#'Pebesma, E., 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal 10 (1), 439-446,
-#'https://doi.org/10.32614/RJ-2018-009
 #'
 #'@docType data
 #'
@@ -69,5 +65,8 @@
 #'
 #'@usage state_list
 #'
+#'#'@references 
+#'Pebesma, E., 2018. Simple Features for R: Standardized Support for Spatial Vector Data. The R Journal 10 (1), 439-446,
+#'https://doi.org/10.32614/RJ-2018-009
 #'
 "state_list"
