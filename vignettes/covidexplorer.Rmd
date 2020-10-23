@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(covidexplorer)
 library(knitr)
+library(here)
 ```
 
 ## What is USA COVID-19 Explorer app?
@@ -61,8 +62,10 @@ parameters over a specified period of time.
 * Daily line plot: presents cumulative number of cases specified 
 parameters over a specified point in time.
 
+
+
 ```{r homepage, fig.cap="USA COVID-19 Explorer Plot Page", out.width="100%"}
-knitr::include_graphics(here::here("man/figures/map.PNG"))
+knitr::include_graphics("man/figures/map.PNG")
 ```
 
 At the bottom of the `Plot` page, you can see `User Control` section
@@ -76,7 +79,7 @@ Users can also select desired state by clicking the name (abbreviation) of the s
 map plot. Please note that the app will crash if users click outside the name of the state.
 
 ```{r plots, fig.cap="Daily and Cumulative Cases Plots", out.width="100%"}
-knitr::include_graphics(here::here("man/figures/plots.PNG"))
+knitr::include_graphics("man/figures/plots.PNG")
 ```
 
 ### Table Page
@@ -94,5 +97,5 @@ by the number of cases. In addition, it lets users to select how many entries to
 shown in the table.
 
 ```{r table, fig.cap="USA COVID-19 Explorer Table Page", out.width="100%"}
-knitr::include_graphics(here::here("man/figures/table.PNG"))
+knitr::include_graphics("man/figures/table.PNG")
 ```
