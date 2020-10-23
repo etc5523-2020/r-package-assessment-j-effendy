@@ -38,4 +38,4 @@ launch_app()
 
 ## Vignette
 
-The vignette for this package can be found at [GitHub](https://etc5523-2020.github.io/r-package-assessment-j-effendy/)
+The vignette for this package can be found at [GitHub](https://etc5523-2020.github.io/r-package-assessment-j-effendy/articles/covidexplorer.html)
