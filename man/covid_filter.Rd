@@ -4,22 +4,19 @@
 \alias{covid_filter}
 \title{Filtering the \code{covid} data frame based on user input.}
 \usage{
-covid_filter(data, stats)
+covid_filter(data, stats, input)
 }
 \arguments{
 \item{data}{\code{covid} data frame.}
 
 \item{stats}{Preferred statistics to calculate the variable of interest in the COVID-19 data frame.
 Use 'cumulative' to return cumulative COVID-19 stats, and 'daily'to return daily COVID-19 stats.}
+
+\item{input}{Variable of interest chosen by users.}
 }
 \value{
 \code{covid_filter} reruns the same type of the input, i.e. a data frame.
 }
 \description{
 Filtering the \code{covid} data frame based on user input.
-}
-\examples{
-# This will return filtered cumulative stats from covid data frame based on users' input
-covid_filter(covid, stats = 'cumulative')
-
 }

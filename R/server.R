@@ -1,3 +1,4 @@
+
 filter_input <- function(data, input){
   data %>%
     dplyr::filter(key_alpha_2 == input$state,
@@ -11,12 +12,8 @@ filter_input <- function(data, input){
 #' @param stats Preferred statistics to calculate the variable of interest in the COVID-19 data frame.
 #' Use 'cumulative' to return cumulative COVID-19 stats, and 'daily'to return daily COVID-19 stats.
 #'
+#' @param input Variable of interest chosen by users.
 #' @return `covid_filter` reruns the same type of the input, i.e. a data frame.
-#'
-#' @examples
-#' # This will return filtered cumulative stats from covid data frame based on users' input
-#' covid_filter(covid, stats = 'cumulative')
-#' 
 #' @export
 #' @name covid_filter
 
