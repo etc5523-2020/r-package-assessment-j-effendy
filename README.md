@@ -10,6 +10,12 @@ The goal of `covidexplorer` package is to provide users with insights of the spr
 * Test
 * Recovered
 
+In addition to the USA COVID-19 Explorer app, `covidexplorer` package also contains three datasets: 
+
+* `covid`: contains USA COVID-19 data at State level from 2020-01-12 to 2020-10-21.
+* `usa_map`: contains necessary data to draw geographical map of the US.
+* `state_list`: contains a list of the centroids coordinates of each states in the US.
+
 ## Installation
 
 You can install the `covidexplorer` package with:
@@ -29,3 +35,7 @@ launch_app()
 ```
 
 ![](man/figures/map.PNG)
+
+## Vignette
+
+The vignette for this package can be found at [GitHub](https://etc5523-2020.github.io/r-package-assessment-j-effendy/)

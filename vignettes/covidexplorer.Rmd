@@ -10,14 +10,14 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  echo = FALSE
 )
 ```
 
 ```{r setup}
 library(covidexplorer)
 library(knitr)
-library(here)
 ```
 
 ## What is USA COVID-19 Explorer app?
