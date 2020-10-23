@@ -76,7 +76,9 @@
     
 <div class="sourceCode" id="cb1"><pre class="downlit">
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">covidexplorer</span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://yihui.org/knitr/">knitr</a></span><span class="op">)</span></pre></div>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://yihui.org/knitr/">knitr</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/krlmlr/here">here</a></span><span class="op">)</span>
+<span class="co">#&gt; here() starts at /Users/runner/work/r-package-assessment-j-effendy/r-package-assessment-j-effendy</span></pre></div>
 <div id="what-is-usa-covid-19-explorer-app" class="section level2">
 <h2 class="hasAnchor">
 <a href="#what-is-usa-covid-19-explorer-app" class="anchor"></a>What is USA COVID-19 Explorer app?</h2>
@@ -114,9 +116,9 @@
 <li>Daily line plot: presents cumulative number of cases specified parameters over a specified point in time.</li>
 </ul>
 <div class="sourceCode" id="cb4"><pre class="downlit">
-<span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html">include_graphics</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/here/man/here.html">here</a></span><span class="op">(</span><span class="st">"man/figures/map.PNG"</span><span class="op">)</span><span class="op">)</span></pre></div>
+<span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html">include_graphics</a></span><span class="op">(</span><span class="st">"man/figures/map.PNG"</span><span class="op">)</span></pre></div>
 <div class="figure">
-<img src="../man/figures/map.PNG" alt="USA COVID-19 Explorer Plot Page" width="100%"><p class="caption">
+<img src="man/figures/map.PNG" alt="USA COVID-19 Explorer Plot Page" width="100%"><p class="caption">
 USA COVID-19 Explorer Plot Page
 </p>
 </div>
@@ -128,9 +130,9 @@ USA COVID-19 Explorer Plot Page
 </ul>
 <p>Users can also select desired state by clicking the name (abbreviation) of the state in the map plot. Please note that the app will crash if users click outside the name of the state.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit">
-<span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html">include_graphics</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/here/man/here.html">here</a></span><span class="op">(</span><span class="st">"man/figures/plots.PNG"</span><span class="op">)</span><span class="op">)</span></pre></div>
+<span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html">include_graphics</a></span><span class="op">(</span><span class="st">"man/figures/plots.PNG"</span><span class="op">)</span></pre></div>
 <div class="figure">
-<img src="../man/figures/plots.PNG" alt="Daily and Cumulative Cases Plots" width="100%"><p class="caption">
+<img src="man/figures/plots.PNG" alt="Daily and Cumulative Cases Plots" width="100%"><p class="caption">
 Daily and Cumulative Cases Plots
 </p>
 </div>
@@ -146,9 +148,9 @@ Daily and Cumulative Cases Plots
 </ul>
 <p>This table can be customised based on users’ preferences. For instance, it can be sorted by the number of cases. In addition, it lets users to select how many entries to be shown in the table.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit">
-<span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html">include_graphics</a></span><span class="op">(</span><span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/here/man/here.html">here</a></span><span class="op">(</span><span class="st">"man/figures/table.PNG"</span><span class="op">)</span><span class="op">)</span></pre></div>
+<span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html">include_graphics</a></span><span class="op">(</span><span class="st">"man/figures/table.PNG"</span><span class="op">)</span></pre></div>
 <div class="figure">
-<img src="../man/figures/table.PNG" alt="USA COVID-19 Explorer Table Page" width="100%"><p class="caption">
+<img src="man/figures/table.PNG" alt="USA COVID-19 Explorer Table Page" width="100%"><p class="caption">
 USA COVID-19 Explorer Table Page
 </p>
 </div>
